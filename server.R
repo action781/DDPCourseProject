@@ -3,6 +3,7 @@
 library(ggplot2)
 library(DT)
 WHO <- read.csv("Data/WHO.csv")
+mtcars <- mtcars
 
 shinyServer(function(input, output) {
     
