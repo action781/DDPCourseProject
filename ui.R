@@ -15,14 +15,7 @@ shinyUI(fluidPage(
                             )
                 ),
     
-        mainPanel(
-            tabsetPanel(
-                tabPanel("plot", plotOutput("plot")),
-                tabPanel("table",
-                         DT::dataTableOutput("table")
-                )
-                )
-            )
+        mainPanel(plotOutput("plot"))
     )
 ))
 
