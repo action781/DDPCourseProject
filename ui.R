@@ -5,13 +5,13 @@
 library(shiny)
 
 shinyUI(fluidPage(
-    titlePanel("Literacy Rate Across the World by Region"),
+    titlePanel("Top 10 NBA Teams By Stat Category"),
     
     sidebarLayout(
         sidebarPanel(
             # Define the sidebar with one input
                 selectInput("var", "Select the Variable:", 
-                            choices=colnames(WHO[3:13])
+                            choices=colnames(NBA[2:16])
                             )
                 ),
     
